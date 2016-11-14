@@ -61,6 +61,9 @@ function cart_get_number_of_items()
     }
   function cancel_order()
     {
-      alert('aaa');
+      window.localStorage.clear();
+      update_orders_input();
+      update_orders_button();
+      $('#cart').text('Your cart is now empty');
       return false;
     }
