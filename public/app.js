@@ -59,3 +59,8 @@ function cart_get_number_of_items()
       }
       return orders;
     }
+  function cancel_order()
+    {
+      alert('aaa');
+      return false;
+    }
